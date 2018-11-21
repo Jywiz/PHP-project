@@ -2,7 +2,7 @@
 
 <?php
 
-
+include('connection.php');
 
 ?>
 
