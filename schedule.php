@@ -78,12 +78,14 @@ include('connection.php');
 									echo "<th>Title</th>";
 									echo "<th>Date</th>";
 									echo "<th>UserID</th>";
+									echo "<th>AppointmentID</th>";
 								echo "<tr>";
 							while($row = mysqli_fetch_array($result)){
 								echo "<tr>";
 									echo "<td>" . $row['Title'] . "</td>";
 									echo "<td>" . $row['Date'] . "</td>";
 									echo "<td>" . $row['UserID'] . "</td>";
+									echo "<td>" . $row['AppointmentID'] . "</td>";
 								echo "</tr>";
 							}
 							echo "</table>";
