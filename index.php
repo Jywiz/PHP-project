@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <?php
-
+//forming connection to database
 include('connection.php');
 
 ?>
