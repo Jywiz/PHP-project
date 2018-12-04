@@ -66,6 +66,8 @@ include('connection.php');
 					<hr class="line">
 					<?php 
 					
+					/* NOTE: Currently trying to invent a better way to fetch data 
+					(ie. using a separate .php file)*/
 					
 					// Attempting query selection
 					$sql = "SELECT * FROM appointment";
@@ -109,7 +111,7 @@ include('connection.php');
 					</h2>
 					<hr class="line">
 					<br>
-					<p>Give your entry a title and a date</p>
+					<p>Under construction</p>
 				</div>
 			</div>
 		</div>
