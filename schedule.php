@@ -66,7 +66,6 @@ include('connection.php');
 					<hr class="line">
 					<?php 
 					
-					//On this part the page displays some data from the database
 					
 					// Attempting query selection
 					$sql = "SELECT * FROM appointment";
@@ -97,6 +96,8 @@ include('connection.php');
 						echo "ERROR: Could not execute $sql. " . mysqli_error($link);
 					}
 
+					//Closing connection
+					mysqli_close($link);
 					?>
 				</div>
 			</div>
@@ -109,39 +110,6 @@ include('connection.php');
 					<hr class="line">
 					<br>
 					<p>Give your entry a title and a date</p>
-					<br>
-						<?php
-					
-							if(isset($_POST['create'])) 
-							{
-								$sql = "INSERT INTO appointment (title, date)
-								VALUES (?,?)";
-							
-								$stmt = mysqli_prepare($link,$sql);
-							
-								$stmt->bind_param("sss", $_POST['title'], $_POST['date']);
-								$stmt->execute();
-							
-								$result = mysqli_query($link,$sql);
-							}
-						?>
-					
-						<form action="schedule.php" method="post">
-							<label id="entry">Title:</label><br/>
-							<input type="text" name="title"><br/>
-					
-							<label id="entry">Date:</label><br/>
-							<input type="text" name="date"><br/>
-					
-							<button type="submit" name="create">Create!</button>
-						</form>
-						
-						<?php
-						
-							//Closing connection
-							mysqli_close($link);
-						
-						?>
 				</div>
 			</div>
 		</div>
