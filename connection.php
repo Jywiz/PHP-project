@@ -1,4 +1,5 @@
 <?php
+//forming connection to DB
 $link = mysqli_connect("127.0.0.1", "azure", "6#vWHD_$", "localdb", "49477");
 
 // Checking connection

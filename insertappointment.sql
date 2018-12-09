@@ -1,1 +1,0 @@
-INSERT INTO `appointment` VALUES ('Dentist', '2019-12-02', '01');

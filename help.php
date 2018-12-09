@@ -63,39 +63,23 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 		
 		<!-- Content -->
 		<div class="container">
-	
 			<div class="row">
 				<div class="box">
-					<div class="col-lg-12 text-center">	
-						<img class="img-responsive img-full img-center" src="pen.jpg" alt="picture of a person writing">
-					</div>
-					
-					<h2 class="fpage">
-					<small>Welcome to</small>
+					<h2 class="intro-text text-center">
+					Instructions
 					</h2>
-					<h1 class="sitetitle">Easy Schedules!</h1>
 					<hr class="line">
+					<hr>
+					<strong>Here are the instructions on how to use this site!</strong>
+					<hr>
+					<p>1. Start by making a new entry at the schedule tab.</p>
+					<p>2. In the entry fields you must input a title for your entry and a date.</p>
+					<p>3. After that your entry will appear on the upper part of the page.</p>
+					<p>4. In the index site you can sign out by clicking the button on the bottom part of the page.</p>
+					</p>
 				</div>
 			</div>
-			
-			<div class="row">
-				<div class="box">
-					<div class="col-lg-12">
-						<hr class="line">
-						<h2 class="intro-text text-center">Welcome, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></h2>
-						<hr class="line">
-						<hr>
-						<p>On this site you can create and manage your own schedule.</p>
-						<p>If you need any advice on how to use this site, view the help page.</p>
-						<p>Start creating your first schedule entry <strong><a href="schedule.php">here!</a></strong></p>
-						<hr>
-							<a href="logout.php" class="btn btn-danger">
-							Sign out
-							</a>
-						</p>
-					</div>
-				</div>
-			</div>
+		</div>
 					
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
