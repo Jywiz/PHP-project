@@ -81,7 +81,7 @@
 					//Redirecting user to login page
 					header("location: login.php");
 				} else {
-					echo "Daamn something went wrong. Try again later!";
+					echo "Something went wrong with sending data to the server. Try again later!";
 				}
 			}
          
